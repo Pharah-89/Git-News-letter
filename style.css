@@ -1,0 +1,245 @@
+.container {
+  color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 4px rgba(44, 43, 43, 0.9);
+}
+
+body {
+  background-color: #e6e6e698;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+  font-weight: bold;
+  font-family: josefin sans-serif;
+}
+/* text-align: center; */
+
+.preview-container {
+  position: relative;
+  padding: 20px;
+}
+
+.preview-container::before {
+  content: "PREVIEW";
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 250px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+  /* Light, transparent color */
+  z-index: -1;
+  /* Behind the main content */
+  white-space: nowrap;
+}
+
+.section {
+  background-color: #173289;
+}
+
+.sectionText {
+  width: 55%;
+}
+
+.section2 {
+  background-color: #993233;
+}
+
+.section3 {
+  background-color: rgb(255, 255, 255);
+}
+
+.main-Text {
+  font-size: 4rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+}
+
+.btn {
+  border: 0px;
+}
+
+.section5 {
+  background-color: #d21404;
+}
+
+.goldenText {
+  color: #ea9c3f;
+  font-size: 30px;
+}
+
+.cart-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 50px;
+  justify-content: center;
+}
+
+.cards {
+  background-color: #1520a6;
+  border-radius: 30px;
+  padding: 45px 20px;
+  color: white;
+  width: 95%;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Center items vertically */
+}
+.cards button {
+  padding: 5px 30px;
+  border: 0px;
+  background-color: white;
+  color: #1520a6;
+  justify-content: flex-end;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.videoText {
+  text-align: center;
+  margin: 28px;
+  font-weight: 500;
+}
+.infoText {
+  padding-top: 40px;
+}
+.infoText h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #0b66c2;
+}
+.infoText h4 {
+  font-size: 30px;
+}
+.infoText h3 {
+  font-size: 3rem;
+}
+.infoText button {
+  background-color: #0b66c2;
+  padding: 15px 50px;
+  border: 0px;
+  border-radius: 45px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.red {
+  color: #993233;
+}
+
+.bg-red {
+  background-color: #993233;
+}
+
+.blue {
+  color: #173289;
+}
+
+.section4 {
+  background-color: #1520a6;
+}
+.footer{
+background-color: #1b46d4;
+}
+.sub{
+    color:#1b46d4;
+}
+
+
+/* Default styles for large screens */
+
+/* Add your default styles here */
+
+/* Media query for medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Styles for medium screens */
+  .container {
+    max-width: 700px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .sectionText {
+    margin-top: 20px;
+  }
+  .img {
+    margin-top: 20px;
+  }
+  .cards {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Styles for small screens */
+  .container {
+    max-width: 400px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .sectionText {
+    margin-top: 20px;
+  }
+  .img {
+    margin-top: 20px;
+  }
+  .cards {
+    margin-bottom: 20px;
+  }
+  .preview-container {
+    padding: 20px;
+  }
+}
+
+/* Media query for extra small screens (max-width: 320px) */
+@media (max-width: 320px) {
+  /* Styles for extra small screens */
+  .container {
+    max-width: 300px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .sectionText {
+    margin-top: 20px;
+  }
+  .img {
+    margin-top: 20px;
+  }
+  .cards {
+    margin-bottom: 20px;
+  }
+  .preview-container {
+    padding: 20px;
+  }
+  .footer {
+    padding: 20px;
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 1200px) {
+  /* Styles for desktops */
+}
+
+/* Media query for laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for laptops */
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {}
+  /* Styles for mobile
